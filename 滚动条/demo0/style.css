@@ -1,0 +1,42 @@
+@import url('https://fonts.font.im/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+article {
+    padding: 100px 0;
+}
+
+article .container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+article .container p {
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, .4);
+    margin-bottom: 15px;
+}
+
+
+/* 滚动条样式，仅支持chrome和edge */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#00DBDE 0%, #FC00FF 100%);
+    border-radius: 8px;
+}

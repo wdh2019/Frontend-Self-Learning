@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="btn" onclick="popupToggle()">点击弹出模态框</a>
+    <div class="" id="popup">
+        <div class="content">
+            <img src="images/email.svg">
+            <h2>Join Our Newsletter</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum accusantium enim officia delectus iste commodi voluptas, id numquam? Ipsam ullam, molestias nostrum ducimus molestiae non deleniti delectus dolores quae alias.</p>
+            <div class="inputBox">
+                <input type="email" placeholder="Enter Email">
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Sign Up" class="btn">
+            </div>
+        </div>
+        <a class="close" onclick="popupToggle()"><img src="images/close.svg"></a>
+    </div>
+    <script>
+        function popupToggle(){
+            const popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

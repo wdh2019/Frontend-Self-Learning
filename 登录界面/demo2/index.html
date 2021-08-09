@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e8b115262.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container right-panel-active">
+        <!-- 注册界面 -->
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h2>sign up</h2>
+                <div class="social-container">
+                    <a href="" class="social"><i class="fab fa-qq"></i></a>
+                    <a href="" class="social"><i class="fab fa-weixin"></i></a>
+                    <a href="" class="social"><i class="fab fa-weibo"></i></a>
+                </div>
+                <input type="text" name="username" class="username" placeholder="Username...">
+                <input type="email" name="email" class="email" placeholder="Email...">
+                <input type="password" name="password" class="password" placeholder="Password">
+                <button type="submit" class="sign-up">sign up</button>
+            </form>
+        </div>
+
+        <!-- 登录界面 -->
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h2>sign in</h2>
+                <div class="social-container">
+                    <a href="" class="social"><i class="fab fa-qq"></i></a>
+                    <a href="" class="social"><i class="fab fa-weixin"></i></a>
+                    <a href="" class="social"><i class="fab fa-weibo"></i></a>
+                </div>
+                <input type="email" name="email" class="email" placeholder="Email...">
+                <input type="password" name="password" class="password" placeholder="Password">
+                <a href="#">forget your password?</a>
+                <button type="submit" class="sign-in">sign in</button>
+            </form>
+        </div>
+
+        <!-- 覆盖容器 -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <!-- 左边覆盖 -->
+                <div class="overlay-panel overlay-left-container">
+                    <h2>welcome back!</h2>
+                    <p>To keep connected withe us please sign in with your personal info</p>
+                    <button id="sign-in">sign in</button>
+                </div>
+                <!-- 右边覆盖 -->
+                <div class="overlay-panel overlay-right-container">
+                    <h2>hello friend</h2>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button id="sign-up">sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

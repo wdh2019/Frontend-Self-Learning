@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模态框</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 弹出按钮 -->
+        <a href="#open-modal" class="btn">纯css模态框</a>
+    </div>
+    <!-- 里弹窗的目标区域 -->
+    <div id="open-modal" class="modal-window">
+        <div>
+            <a href="#" class="modal-close">Close</a>
+            <h1 class="modal-title">Title</h1>
+            <div class="modal-body">这是一个使用css实现的模态框，利用了:target微元素实现了样式定位</div>
+        </div>
+    </div>
+</body>
+</html>

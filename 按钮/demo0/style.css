@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+a {
+    position: relative;
+    display: inline-block;
+    padding: 1em 2em;
+    margin: 10px;
+    color: white;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+}
+
+a:nth-child(2) {
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+}
+
+span {
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: move 1s linear infinite;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+@keyframes move {
+    from {
+        width: 0;
+        height: 0;
+        opacity: 0.7;
+    }
+    to {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}

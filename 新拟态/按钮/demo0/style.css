@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #efeeee;
+}
+
+.container {
+    display: flex;
+    /* 一行中的元素平均分配宽度 */
+    justify-content: space-around;
+    align-items: center;
+    /* 元素在一行放不下时自动换行 */
+    flex-wrap: wrap;
+    width: 700px;
+    height: 600px;
+}
+
+.container .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* 图片和文字垂直排列 */
+    flex-direction: column;
+    width: 100px;
+    height: 140px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.container .box .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    /* 圆角 */
+    border-radius: 20px;
+    /* 盒子阴影 */
+    box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2),
+    -18px -18px 30px rgba(255, 255, 255, 1);
+    /* 过渡时间 ease-out：先快后慢*/
+    transition: all 0.2s ease-out;
+}
+
+.container .box .img img {
+    width: 60px;
+    transition: all 0.2s ease-out;
+}
+
+.container .box p {
+    color: slategrey;
+}
+
+.container .box .img:hover {
+    /* inset 表示内部阴影 */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2),
+    0 0 0 rgba(255, 255, 255, 0.8),
+    inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+    inset -18px -18px 30px rgba(255, 255, 255, 1);
+}
+
+.container .box .img:hover img {
+    width: 58px;
+}
